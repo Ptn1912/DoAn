@@ -34,13 +34,13 @@
   }
   
   .image-container:hover img {
-    transform: scale(1.13);
+    transform: scale(1.2);
   }
   .image-container{
     justify-content: center;
   align-items: center;
   padding: 30px 0px;
-  background: #6119bf;
+  background: darkorchid;
     backdrop-filter: blur(0.5rem);
     border-radius: 20px;
     width: 520px;
@@ -113,4 +113,7 @@ body {
   align-items: center;
   min-height: 100vh;
   
+}
+.ngoai{
+  margin-top: 60px;
 }

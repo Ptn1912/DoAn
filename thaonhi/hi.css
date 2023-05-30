@@ -3,6 +3,7 @@ body {
 }
 p{
     color: red;
+
 }
 a{
     text-decoration: none;
@@ -25,12 +26,12 @@ a{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 1200px;
+    height: 1200px;
     background-image: conic-gradient(transparent, transparent, transparent, #a909da);
     animation: animate 4s linear infinite;
     animation-delay: -2s;
-    transition: all 0.2s linear;
+    transition: all 0.5s linear;
   }
   
   .box::before {
@@ -38,11 +39,11 @@ a{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 1200px;
+    height: 1200px;
     background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
     animation: animate 4s linear infinite;
-    transition: all 0.2s linear;
+    transition: all 0.5s linear;
   }
   .box .form {
     position: absolute;
@@ -50,6 +51,16 @@ a{
     border-radius: 16px;
     background: #0c1022;
     z-index: 1;
+  }
+  .box .form .closeButton {
+    /* background: #000; */
+    color: white;
+    position: absolute;
+    top: 2;
+    right: 0;
+    font-size: 45px;
+
+
   }
   .box .form__title {
     text-align: center;
@@ -153,14 +164,13 @@ a{
       transform: rotate(360deg);
     }
   }
-  #overlay {
+  .overlay {
     display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Tăng giá trị alpha thành 0.8 */
     z-index: 9999;
   }
   
@@ -174,14 +184,20 @@ a{
     padding: 20px;
     z-index: 10000;
   }
-  
+
   .show {
     display: block;
   }
   
-  .show #overlay {
+ .open{
     display: block; /* Hiển thị overlay khi form được hiển thị */
-  }
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.75);
+ }
   
   
      
